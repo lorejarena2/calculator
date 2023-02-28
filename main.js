@@ -1,62 +1,77 @@
-const num1=document.getElementById('uno');
-const num2=document.getElementById('dos');
+const num1=document.getElementById('numero');
 var mostrar=document.getElementById('mostrar')
 var operacion=document.getElementById('operacion')
 var operando=0
+var uno=0
+var dos=0
 
 
 function operaciones(){
   switch(operando){
     case '-':
-      resultado=parseInt(num1.value)-parseInt(num2.value);
-      console.log(num1.value,num2.value)
-      mostrar.textContent=resultado;
-      operacion.textContent='-'
+    dos=parseInt(num1.value)
+    resultado=(uno-dos)
+    mostrar.textContent=resultado;
+    console.log(uno)
+    console.log(dos)
+    num1.value=""
+    operando=""
       break;
     case '*':
-      resultado=parseInt(num1.value)*parseInt(num2.value);
-      mostrar.textContent=resultado;
-      operacion.textContent='*'
+    dos=parseInt(num1.value)
+    resultado=(dos*uno)
+    mostrar.textContent=resultado;
+    console.log(uno)
+    console.log(dos)
+    num1.value=""
+    operando=""
       break;
     case '/':
-      resultado=parseInt(num1.value)/parseInt(num2.value);
-      mostrar.textContent=resultado;
-      operacion.textContent='/' 
+    dos=parseInt(num1.value)
+    resultado=(uno/dos)
+    mostrar.textContent=resultado;
+    console.log(uno)
+    console.log(dos)
+    num1.value=""
+    operando=""
       break;
     case '+':
-      resultado=parseInt(num1.value)+parseInt(num2.value);
+      dos=parseInt(num1.value)
+      resultado=(dos+uno)
       mostrar.textContent=resultado;
-      operacion.textContent='+' 
+      console.log(uno)
+      console.log(dos)
+      num1.value=""
+      operando=""
       
-
   }
 }
 
   function sum(){
-    operacion.textContent='+'
     operando="+"
+    uno=parseInt(num1.value)
+    num1.value=""
+
   }
 
   function rest(){
-    operacion.textContent='-'
     operando="-"
-  }
-
-  function multi(){
-    operacion.textContent='*'
-    operando="*"
+    uno=parseInt(num1.value)
+    num1.value=""
   }
 
   function divi(){
-    operacion.textContent='/'
     operando="/"
-  }
-
-  function ac(){
-    mostrar.textContent=0;
-    operacion.textContent='' 
+    uno=parseInt(num1.value)
     num1.value=""
-    num2.value=""
   }
 
-  
+  function multi(){
+    operando="*"
+    uno=parseInt(num1.value)
+    num1.value=""
+  }
+
+
+
+
