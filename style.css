@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor{
+  width: 550px;
+  height: 647px;
+  border: black 2px solid;
+  border-radius: 20px;
+  background-color: rgba(236,240,241,255);
+}
+
+.contenedor_barra{
+width: 100%;
+height: 25%;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(59,72,75,255);
+}
+
+.barra{
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: rgba(189,200,160,255);
+}
+.numeros{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.num{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.primero{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.boton{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.operaciones{
+  background-color: #e1592a;
+}
