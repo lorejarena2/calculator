@@ -11,67 +11,67 @@
 <body>
   <div class="contenedor">
     <div class="contenedor_barra">
-        <div class="barra">
-
+        <div id="mostrar" class="barra">
+          0
         </div>
     </div>
     <div class="numeros">
-      <input class="num" type="text"> <h2> + </h2>
-      <input class="num" type="text">
+      <input class="num" id="uno" type="text"> <h2 id="operacion">  </h2>
+      <input class="num" id="dos" type="text">
     </div>
     <div class="primero">
-      <button class="boton">
+      <button btn_7 class="boton">
         7
       </button>
-      <button class="boton">
+      <button btn_8 class="boton">
         8
       </button>
-      <button class="boton">
+      <button btn_9 class="boton">
         9
       </button>
-      <button class="boton operaciones">
+      <button onclick="operaciones('+')" btn_sumar class="boton operaciones">
         +
       </button>
     </div>
     <div class="primero">
-      <button class="boton">
+      <button btn_4 class="boton">
         4
       </button>
-      <button class="boton">
+      <button btn_5 class="boton">
         5
       </button>
-      <button class="boton">
+      <button btn_6 class="boton">
         6
       </button>
-      <button class="boton operaciones">
+      <button btn_restar onclick="operaciones('-')" class="boton operaciones">
         -
       </button>
     </div>
     <div class="primero">
-      <button class="boton">
+      <button btn_1 class="boton">
         1
       </button>
-      <button class="boton">
+      <button btn_2 class="boton">
         2
       </button>
-      <button class="boton">
+      <button btn_3 class="boton">
         3
       </button>
-      <button class="boton operaciones">
+      <button btn_multiplicar onclick="operaciones('*')" class="boton operaciones">
         *
       </button>
     </div>
     <div class="primero">
-      <button class="boton">
+      <button btn_0 class="boton">
         0
       </button>
-      <button class="boton">
+      <button btn_igual class="boton">
         =
       </button>
-      <button class="boton">
+      <button btn_ac onclick="operaciones('.')" class="boton">
         AC
       </button>
-      <button class="boton operaciones">
+      <button btn_dividir onclick="operaciones('/')" class="boton operaciones">
         /
       </button>
     </div>
