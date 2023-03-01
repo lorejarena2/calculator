@@ -72,6 +72,10 @@ function operaciones(){
     num1.value=""
   }
 
+  function ac(){
+    mostrar.textContent=0;
+  }
+
 
 
 
